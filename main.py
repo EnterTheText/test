@@ -1,3 +1,16 @@
 import random
-print(random.randint(0, 999))
-print('kjhkjhkjhkjbhl')
+print("Добрый день! Как Вас зовут?")
+name = input("Ваше имя >>> ")
+print(f"Приятно познакомиться, {name}!")
+print("Теперь угадай моё загаданное число в промежутке от 1 до 10")
+n = random.randint(1, 10)
+s = 1
+x = int(input(">>> "))
+while x != n:
+    s += 1
+    if x > n:
+        print("Загаданное число меньше!")
+    elif x < n:
+        print("Загаданное число больше!")
+    x = int(input(">>> "))
+print(f"Поздравляю, ты угадал число ({n})! Вам потребовалось {s} попыток(ки)")
