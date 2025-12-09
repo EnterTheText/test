@@ -27,3 +27,4 @@ for i in range(1000):
             else:
                 nope += 1
 print(yes/(yes+nope))
+
