@@ -23,7 +23,7 @@ for n in range(3, k+1):
 print("x:", *x)
 print("y:", *y)
 
-plt.plot(x, y, )
+plt.plot(x, y, marker="o")
 
 x = []
 y = []
@@ -33,5 +33,5 @@ for l in range(1, k+1):
 
 print("\nx:", *x)
 print("y:", *y)
-plt.plot(x, y, color="red")
+plt.plot(x, y, color="red", marker='.')
 plt.show()
